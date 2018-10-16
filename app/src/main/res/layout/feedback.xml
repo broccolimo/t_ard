@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/color_bg_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户反馈"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/color_bg_2"
+                android:textColor="@color/white"
+                android:text="维保满意度(请选择):"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/stf_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="非常满意"/>
+
+                <RadioButton
+                    android:id="@+id/stf_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="满意"/>
+
+                <RadioButton
+                    android:id="@+id/stf_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一般"/>
+
+                <RadioButton
+                    android:id="@+id/stf_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不满意"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/color_bg_2"
+                android:textColor="@color/white"
+                android:text="客户签名:"/>
+
+
+            <com.yzmc.util.LinePathView
+                android:id="@+id/lpv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/border_1"/>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="重置"
+                    android:background="@drawable/btn_style_3"
+                    android:layout_alignParentRight="true"/>
+
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:background="@drawable/btn_style_3"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

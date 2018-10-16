@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/order_id"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/maintain_id"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="维保人:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="提交时间:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="使用单位:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="电梯地址:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="注册代码:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="电梯型号:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="发单时间:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="维保类型:"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/item_tv_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

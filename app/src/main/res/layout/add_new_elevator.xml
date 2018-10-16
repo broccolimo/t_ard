@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/color_bg_1">
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新建电梯"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="说明:请准确填写以下信息, *为必填项"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:text="电梯网关ID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"/>
+
+
+                <Button
+                    android:id="@+id/btn_scan_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="扫一扫"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_style_3"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/uid_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:visibility="gone"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:text="摄像头ID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+
+                <Button
+                    android:id="@+id/btn_scan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="扫一扫"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_style_3"/>
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/uid_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:visibility="gone"/>
+
+
+
+            <TextView
+                android:text="电梯地址:"
+                android:id="@+id/tv_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+
+
+            <Spinner
+                android:id="@+id/zone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/zone"></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/province"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"></Spinner>
+
+
+                <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"></Spinner>
+
+
+                <Spinner
+                    android:id="@+id/area"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"></Spinner>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="电梯详细地址:"
+                android:id="@+id/tv_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入电梯地址"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/jing"
+                    android:hint="经度"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/wei"
+                    android:layout_toRightOf="@+id/jing"
+                    android:hint="纬度"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"/>
+
+
+                <Button
+                    android:id="@+id/btn_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="获取经纬度"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_style_3"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="安装时间:"
+                    android:id="@+id/tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/et_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="right"
+                    android:hint="点击选择日期"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:text="安装单位:"
+                android:id="@+id/tv_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_installUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入安装单位名称"/>
+
+
+            <TextView
+                android:text="使用管理责任单位:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_useUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入使用管理责任单位名称"/>
+
+            <TextView
+                android:text="使用单位设备编号:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_useUnitID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入使用单位设备编号"/>
+
+            <TextView
+                android:text="电梯注册代码:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_elevatorCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入电梯代码"/>
+
+            <TextView
+                android:text="制造单位:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_makeUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入制造单位名称"/>
+
+            <TextView
+                android:text="维保单位:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_maintainUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入维保单位名称"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="电梯型号:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/sp_elevatorModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/elevatorModel">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="曳引机型号:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/tractionMachineModel">
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="曳引机根数:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/tractionMachine_num">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="曳引机直径:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/tractionMachine_diameter">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="电机功率:"
+                    android:textSize="20dp"/>
+
+
+                <EditText
+                    android:id="@+id/conf_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="单位:kw"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="控制柜型号:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/controlBox">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="制动器型号:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/brakes">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="限速器型号:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/speedLimiter">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="安全钳型号:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/safetyGear">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="门锁型号:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/doorLock">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="额定速度:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/ratedSpeed">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="额定载重:"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/conf_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/ratedLoad">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="层:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/conf_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="站:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/conf_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="门:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/conf_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </EditText>
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="安装人员:"
+                    android:id="@+id/tv_8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_add_a"
+                    android:layout_toLeftOf="@+id/btn_del_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style_3"
+                    android:text="添加"/>
+
+                <Button
+                    android:id="@+id/btn_del_a"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style_3"
+                    android:text="删除"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_commit"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textSize="25dp"
+                android:background="@drawable/btn_style_3"
+                android:text="确定"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

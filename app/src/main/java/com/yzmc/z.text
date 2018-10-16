@@ -1,0 +1,53 @@
+OkHttpClient client = new OkHttpClient.Builder().connectTimeout(15, TimeUnit.SECONDS).build();
+                Retrofit retrofit = new Retrofit.Builder().baseUrl(Constant.baseUrl)
+                        .addConverterFactory(GsonConverterFactory.create()).client(client).build();
+                UserService userService = retrofit.create(UserService.class);
+                Call<UserModel> call = userService.login(String.valueOf(et_account.getText()), String.valueOf(et_password.getText()));
+
+
+
+private ProgressDialog progressDialog;
+
+    private void showProgressDialog(){
+        if(progressDialog == null){
+            progressDialog = new ProgressDialog(Login.this);
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        }
+        progressDialog.setMessage("正在登录...");
+        progressDialog.setCancelable(false);
+        progressDialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+                    @Override
+                    public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                        if (event.getAction() == KeyEvent.ACTION_UP
+                                && keyCode == KeyEvent.KEYCODE_BACK
+                                && event.getRepeatCount() == 0) {
+                            dialog.dismiss();
+                            onBackPressed();
+                        }
+                        return false;
+                    }
+                });
+        progressDialog.show();
+    }
+
+    private void closeProgressDialog(){
+        if(progressDialog != null && progressDialog.isShowing()){
+            progressDialog.dismiss();
+
+
+            private void dialog_over(){
+                                                       AlertDialog.Builder dialog = new AlertDialog.Builder(context);
+                                                       dialog.setCancelable(false);
+                                                       dialog.setTitle("提示");
+                                                       dialog.setMessage(StringCollection.STR001);
+                                                       dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                                           @Override
+                                                           public void onClick(DialogInterface dialog, int which) {
+                                                               Intent intent = new Intent(Feedback.this, Activity_login.class);
+                                                               startActivity(intent);
+                                                           }
+                                                       });
+                                                       dialog.show();
+                                                   }
+        }
+    }

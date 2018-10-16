@@ -1,0 +1,4841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="机房、滑轮间环境"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁，门窗完好，照明正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num1_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num1_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num1_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num1_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num1_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num1_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num1_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+
+                    <ImageView
+                        android:id="@+id/num1_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="手动紧急操作装置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="齐全，在指定位置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num2_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num2_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num2_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num2_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num2_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num2_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num2_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num2_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="驱动主机"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="运行无异常振动和异常声响"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num3_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num3_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num3_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num3_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num3_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num3_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num3_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num3_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="制动器个销轴部位"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="润滑、动作灵活"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num4_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num4_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num4_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num4_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num4_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num4_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num4_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num4_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="制动器间隙"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="打开时制动衬与轮无摩擦，间隙符合制造单位要求"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num5_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num5_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num5_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num5_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num5_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num5_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num5_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num5_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="制动器作为轿厢意外移动保护装置制停子系统时的自监测"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="制动力人工方式检测符合使用维护说明书要求；制动力自监测系统有记录"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num6_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num6_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num6_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num6_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num6_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num6_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num6_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num6_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="编码器"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁，安装牢固"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num7_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num7_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num7_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num7_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num7_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num7_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num7_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num7_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="限速器各销轴部位"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="润滑，转动灵活，电器开关正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num8_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num8_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num8_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num8_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num8_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num8_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num8_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num8_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层门和桥门旁路装置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num9_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num9_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num9_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num9_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num9_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num9_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num9_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num9_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="紧急电动运行"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num10_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num10_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num10_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num10_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num10_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num10_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num10_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num10_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="桥顶"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁，防护栏安全可靠"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num11_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num11_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num11_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num11_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num11_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num11_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num11_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num11_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="桥顶检修、急停开关"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num12_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num12_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num12_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num12_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num12_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num12_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num12_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num12_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="导靴油杯"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁，防护栏安全可靠"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num13_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num13_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num13_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num13_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num13_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num13_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num13_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num13_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="对重/平衡重块及其压板"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="对重块/平衡重块无松动，螺栓紧固"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num14_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num14_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num14_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num14_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num14_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num14_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num14_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num14_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="井道照明"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="齐全、正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num15_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num15_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num15_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num15_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num15_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num15_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num15_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num15_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿厢照明、风扇、应急灯"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num16_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num16_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num16_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num16_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num16_et2"/>
+
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num16_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num16_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num16_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿厢检修、停止装置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num17_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num17_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num17_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num17_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num17_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num17_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num17_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num17_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿内报警装置、对讲系统"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num18_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num18_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num18_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num18_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num18_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num18_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num18_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num18_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿内显示、指令按钮、IC卡系统"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="齐全、有效"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num19_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num19_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num19_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num19_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num19_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num19_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num19_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num19_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿门防撞击保护(安全触板、光幕等)"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="功能有效"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num20_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num20_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num20_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num20_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num20_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num20_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num20_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num20_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿门门锁电器触点"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁，触点接触良好，接线可靠"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num21_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num21_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num21_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num21_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num21_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num21_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num21_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num21_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿门运行"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="开启和关闭工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num22_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num22_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num22_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num22_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num22_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num22_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num22_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num22_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿厢平层精度"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="符合标准值"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num23_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num23_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num23_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num23_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num23_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num23_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num23_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num23_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层站召唤、楼层显示"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="齐全、有效"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num24_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num24_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num24_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num24_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num24_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num24_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num24_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num24_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层门地坎"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num25_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num25_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num25_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num25_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num25_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num25_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num25_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num25_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层门自动关门装置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num26_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num26_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num26_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num26_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num26_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num26_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num26_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num26_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层门门锁自动复位"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="用层门钥匙开锁后释放，门锁能自动复位"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num27_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num27_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num27_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num27_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num27_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num27_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num27_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num27_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层门门锁电器触点"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁，接触良好，接线可靠"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num28_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num28_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num28_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num28_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num28_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num28_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num28_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num28_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层门锁紧元件啮合深度"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="不小于7mm"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num29_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num29_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num29_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num29_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num29_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num29_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num29_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num29_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="底坑环境"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="清洁，无渗水、积水，照明正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num30_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num30_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num30_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num30_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num30_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num30_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num30_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num30_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="底坑停止装置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num31_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num31_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num31_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num31_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num31_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num31_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num31_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num31_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿内合格证、报修电话、乘梯说明"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="在检验周期内、标识齐全"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <TextView
+                            android:id="@+id/num32_status_TextView"
+                            android:textSize="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="50dp"/>
+
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num32_cb1"
+                                android:visibility="gone"
+                                android:text="@string/_tj"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num32_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/num32_cb2"
+                                android:visibility="gone"
+                                android:text="@string/_gh"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:id="@+id/num32_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/num32_result_TextView"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num32_btn"
+                        android:text="图片"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num32_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btn_pass"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_style_3"
+            android:text="通过"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_unpass"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_style_3"
+            android:text="不通过"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+</LinearLayout>

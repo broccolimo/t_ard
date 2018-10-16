@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:text="退单时间"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/cancel_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:text="退单原因"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/cancel_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:text="派给:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="重新指派"
+                android:id="@+id/btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_style_3"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="取消"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_style_3"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

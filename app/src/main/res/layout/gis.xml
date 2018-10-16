@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/color_bg_1">
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIS地图"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_above="@+id/btns"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/btns"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通地图"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卫星图"/>
+
+        <!--<Button
+            android:id="@+id/btn3"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空白地图"/>-->
+
+    </RelativeLayout>
+</RelativeLayout>

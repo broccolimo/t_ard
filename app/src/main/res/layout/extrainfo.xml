@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/color_bg_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维保管理"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/color_bg_2"
+                android:textColor="@color/white"
+                android:text="请填写以下信息:"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="人工费用:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:maxLength="10"
+                    android:id="@+id/et_artificial_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="单位:元"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="出差费用:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:maxLength="10"
+                    android:id="@+id/et_trip_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="单位:元"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="材料费用:"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:maxLength="10"
+                    android:id="@+id/et_material_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="单位:元"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="额定时间:"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_rating_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="实际时间:"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_actual_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="接单人员姓名:"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_accept_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="添加协助人员信息:"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_toLeftOf="@+id/btn_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style_3"
+                    android:text="添加"/>
+
+                <Button
+                    android:id="@+id/btn_del"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style_3"
+                    android:text="删除"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="备注/补充信息:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_extra_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一步"
+                android:textSize="20dp"
+                android:background="@drawable/btn_style_3"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--维保 电梯信息 布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_marginBottom="30dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TableRow>
+                <TextView
+                    android:text="使用单位编号"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/useUnitID"
+                    android:layout_width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="产品编号"
+                    android:layout_weight="1"
+
+                    android:padding="5dp"
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:id="@+id/productID"
+                    android:padding="5dp"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="制造单位"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:id="@+id/makeUnit"
+                    android:width="0dp"
+                    android:padding="5dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:text="安装单位"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/installUnit"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:text="改造/修理单位"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/repairUnit"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:text="维保单位"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/maintainUnit"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:text="电梯型号"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/elevatorModel"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:text="曳引机型号"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/tractionMachineModel"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:text="曳引绳根数/直径"
+                    android:layout_weight="2"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/tractionMachine"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="3"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:text="电动机功率"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/motorPower"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="控制柜型号"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/controlBox"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="制动器型号"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/brakes"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="限速器型号"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:id="@+id/speedLimiter"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="安全钳型号"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/safetyGear"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="门锁型号"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:id="@+id/doorLock"
+                    android:width="0dp"
+
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="额定速度"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:id="@+id/ratedSpeed"
+                    android:width="0dp"
+                    android:padding="5dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="额定载重"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/ratedLoad"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="层站"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/layers"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="改造后型号"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/transformModel"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="年检有效期"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/textview_border"
+                    android:layout_width="0dp"/>
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/annualInspection"
+                    android:width="0dp"
+
+                    android:gravity="right"
+                    android:background="@drawable/textview_border2"
+                    android:layout_weight="2"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

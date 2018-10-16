@@ -1,0 +1,2249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="电动机、减速箱连轴螺栓"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="连接无松动，弹性元件外观良好，无老化等现象"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num1_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num1_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num1_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num1_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num1_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num1_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num1_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num1_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="驱动轮、导向轮轴承部"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="无异常声响，无振动，润滑良好"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num2_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num2_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num2_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num2_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num2_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num2_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num2_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num2_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="曳引轮槽"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="磨损量不超过制造单位要求"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num3_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num3_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num3_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num3_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num3_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num3_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num3_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num3_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="制动器动作状态监测装置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常，制动器动作可靠"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num4_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num4_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num4_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num4_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num4_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num4_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num4_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num4_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="控制柜内各接线端子"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="各接线紧固，整齐，线号齐全清晰"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num5_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num5_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num5_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num5_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num5_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num5_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num5_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num5_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="控制柜各仪表"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="显示正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num6_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num6_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num6_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num6_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num6_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num6_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num6_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num6_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="井道、对重、轿顶各反绳轮轴承部"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="无异常声，无振动，润滑良好"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num7_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num7_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num7_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num7_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num7_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num7_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num7_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num7_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="曳引装置、补偿绳"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="磨损量，断丝数不超过要求"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num8_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num8_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num8_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num8_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num8_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num8_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num8_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num8_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="绳头组合"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="螺帽无松动，开口销齐全"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num9_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num9_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num9_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num9_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num9_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num9_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num9_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num9_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="限速器钢丝绳"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="磨损量，断丝数不超过制造单位要求"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num10_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num10_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num10_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num10_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num10_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num10_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num10_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num10_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="层门、轿门门扇"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="门扇相关间隙符合标准值"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num11_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num11_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num11_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num11_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num11_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num11_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num11_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num11_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="轿门开门限制装置"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num12_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num12_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num12_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num12_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num12_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num12_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num12_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num12_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="对重缓冲器距离"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="符合标准值"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num13_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num13_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num13_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num13_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num13_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num13_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num13_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num13_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="补偿链（绳）与轿厢、对重接合处"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="固定牢靠无松动，开口销齐全"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num14_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num14_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num14_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num14_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num14_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num14_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num14_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num14_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保项目"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="上下极限开关"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:text="维保要求"
+                        android:gravity="center_vertical"/>
+                    <TextView />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border3"
+                        android:text="工作正常"/>
+                    <TextView />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="现状"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <TableLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border3">
+
+                        <Spinner
+                            android:id="@+id/num15_status_spinner"
+                            android:entries="@array/status"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num15_cb1"
+                                android:visibility="gone"
+                                android:text="@string/tj"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num15_et1"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/num15_cb2"
+                                android:visibility="gone"
+                                android:text="@string/gh"/>
+
+                            <EditText
+                                android:layout_width="165dp"
+                                android:visibility="gone"
+                                android:id="@+id/num15_et2"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="处理结果"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/num15_result_spinner"
+                        android:entries="@array/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/num15_btn"
+                        android:text="添加图片\n(点此拍照)"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:background="@drawable/textview_border2"
+                        android:gravity="center_vertical"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/num15_img"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="400dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/textview_border3"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_store"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_style_3"
+            android:text="保存"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_style_3"
+            android:text="下一步"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

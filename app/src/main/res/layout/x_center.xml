@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/color_bg_1">
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维修管理"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/btn_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:text="延时"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="用户单位:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_useUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="安装位置:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="产品型号:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_elevatorModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="运行速度:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_ratedSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="制造厂家:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_makeUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="维修人员:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_accept_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="载重量:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_ratedLoad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="层站:"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/tv_layers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="是否保修"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_yes"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="是"/>
+
+                <RadioButton
+                    android:id="@+id/rb_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="否"/>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="故障原因"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_faultCause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输入故障原因"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="处理结果"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_dealResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输入处理结果"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更换配件"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_replacement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输入更换配件"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="召修时间"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_release_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="出发时间"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输出发时间(格式yyyy-MM-dd HH:mm)"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="到达时间"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_arrive_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输到达时间(格式yyyy-MM-dd HH:mm)"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="修理时间"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_repair_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输修理时间(格式yyyy-MM-dd HH:mm)"
+                android:gravity="left"/>
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收费项目"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_chargeItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输入收费项目"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="修理费:(单位:元)"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_repair_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输入修理费"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="配件费:(单位:元)"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_fittings_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="请输入配件费"
+                android:gravity="left"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_style_3"
+                    android:text="下一步"/>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

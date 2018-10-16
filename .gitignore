@@ -1,0 +1,17 @@
+*.iml
+.gradle/
+.idea/
+gradle/
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+settings.gradle
+app/build/
+app/libs/
+app/*.iml
+app/build.gradle
+app/proguard-rules.pro
+app/src/androidTest/
+app/src/test/

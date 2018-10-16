@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/color_bg_1">
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知识库"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="电梯维修保养的技术要点"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="安全回路"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="作用:为保证电梯能安全地运行，在电梯上装有许多安全部件。只有每个安全部件都在正常的情况下，电梯才能运行，否则电梯立即停止运行。所谓安全回路，就是在电梯各安全部件都装有一个安全开关，把所有的安全开关串联，控制一只安全继电器。只有所有安全开关都在接通的情况下，安全继电器吸合，电梯才能得电运行。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="常见的安全回路开关有:\n机房：控制屏急停开关、相序继电器、热继电器、限速器开关\n井道：上极限开关、下极限开关（有的电梯把这两个开关放在安全回路中，有的则用这两个开关直接控制动力电源）\n地坑：断绳保护开关、地坑检修箱急停开关、缓冲器开关\n轿内：操纵箱急停开关\n轿顶：安全窗开关、安全钳开关、轿顶检修箱急停开关故障状态:\n当电梯处于停止状态，所有信号不能登记，快车慢车均无法运行，首先怀疑是安全回路故障。应该到机房控制屏观察安全继电器的状态。如果安全继电器处于释放状态，则应判断为安全回路故障。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="故障可能原因:\n1. 输入电源的相序错或有缺相引起相序继电器动作。\n2. 电梯长时间处于超负载运行或堵转，引起热继电器动作。\n3. 可能限速器超速引起限速器开关动作。\n4. 电梯冲顶或沉底引起极限开关动作。\n5. 地坑断绳开关动作。可能是限速器绳跳出或超长。\n6. 安全钳动作。应查明原因。可能是限速器超速动作、限速器失油误动作、地坑绳轮失油、地坑绳轮有异物（如老鼠等）卷入、安全契块间隙太小等。\n7. 安全窗被人顶起，引起安全窗开关动作。\n8. 可能有的急停开关被人按下。\n9. 如果各开关都正常，应检查其触点接触是否良好，接线是否有松动等。\n另外，目前较多电梯虽然安全回路正常，安全继电器也吸合，但通常在安全继电器上取一付常开触点再送到微机（或PC机）进行检测，如果安全继电器本身接触不良，也会引起安全回路故障的状态。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="门锁回路作用:\n为保证电梯必须在全部门关闭后才能运行，在每扇厅门及轿门上都装有门电气联锁开关。只有全部门电气联锁开关在全部接通的情况下，控制屏的门锁继电器方能吸合，电梯才能运行。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="故障状态:在全部门关闭的状态下，到控制屏观察门锁继电器的状态，如果门锁继电器处于释放状态，则应判断为门锁回路断开。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="维修方法:\n由于目前大多数电梯在门锁断开时快车慢车均不能运行，所以门锁故障虽然容易判断，却很难找出是哪道门故障。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="维修建议:\n1. 首先应重点怀疑电梯停止层的门锁是否故障。\n2. 询问是否有三角钥匙打开过层门，在厅外用三角钥匙重新开关一下厅门。\n3. 确保在检修状态下，在控制屏分开短接厅门锁和厅门锁，分出是厅门部分还是轿门部分故障。\n4. 如是厅门部分故障，确保检修状态下，短接厅门锁回路，以检修速度运行电梯，逐层检查每道厅门联锁接触情况（别忘了被动门）。\n注意：在修复门锁回路故障后，一定要先取掉门锁短接线，方能将电梯恢复到快车状态。另外，目前较多电梯虽然门锁回路正常，门锁继电器也吸合，但通常在门锁继电器上取一付常开触点再送到微机（或PC机）进行检测，如果门锁继电器本身接触不良，也会引起门锁回路故障的状态。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="安全触板（门光电、门光幕）"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="作用:为了防止电梯门在关闭过程中夹住乘客，所以一般在电梯轿门上装有安全触板（或光电或光幕）。安全触板：为机械式防夹人装置，当电梯在关门过程中，人碰到安全触板时，安全触板向内缩进，带动下部的一个微动开关，安全触板开关动作，控制门向开门方向转动。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="光电:有的电梯安装了门光电（至少需要两点），一边为发射端，另一边为接收端。当电梯门在关闭时，如果有物体挡住光线，接收端接受不到发射端的光源，立即驱动光电继电器动作，光电继电器控制门向反方向开启。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="光幕：与光电的原理相同，不过是有许多发射点和接收点罢了。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="故障状态:\n1.梯门关不上现象：电梯在自动位时不能关闭，或没有关完就反向开启。在检修时却能关上。\n原因：安全触板开关坏，或被卡住、或开关调正不当，安全触板稍微动作即引起开关动作。门光电（或光幕）位置偏或被遮挡。或门光电无（光幕）供电电源，或光电（光幕）已坏。\n2.安全触板不起作用原因：安全触板开关坏，或线已断。\n维修：查明原因后修复。"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="关门力限开关"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="作用:有的电梯门装有关门力限开关，当门在关闭过程中如果受到一定阻力门却仍然关不上，则该开关动作，门向开门方向旋转。有的变频门机虽然没有这个开关，但也有类似的功能。在关门时如果遇有一定的阻力，通过变频器的计算门机电流超过一定值时仍不能关上，则向反方向开启。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="故障状态：当关门力限开关有误动作时门会始终关不上。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="开关门按钮作用：自动位时，如果按住开门按钮，则电梯门长时间开启，可以方便乘客多时正常进出轿厢。按一下关门按钮，可以使门立即关闭。检修位时，用来控制电梯的开关门。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="故障现象：有时开关门按钮被按后会卡在里面弹不出来。如果开门按钮被卡住可能会引起电梯到站后门一直开着关不起来。关门按钮被卡住会引起到站后门不开启。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="维修：查明原因，保证按钮动作灵活可靠。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="厅外召唤按钮"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="作用:厅外召唤按钮是用来登记厅外乘客的呼梯需要。同时，它有同方向本层开门的功能。如电梯向上运行时，如按住上召唤不放，则电梯门会长时间开启。（有的电梯被设计成超过一定时间后就强制关门）。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="故障现象：有时召唤按钮被卡住时电梯会停在本层不关门。或过一段时间强制关门后运行，然后每次都要驶向该层停留一段时间。 维修：查明原因，保证按钮动作灵活可靠。"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="门机系统"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="1.直流门机系统\n一般直流门机系统的工作原理:\n开门:当JKM吸合时，电流一方面通过电机转子DM，另一方面通过开门电阻RKM，从M2→M3，使门机向开门方向旋转，因为此时RKM电阻值较大，通过RKM的分流较小。所以开门速度较快。当电梯门关闭到3/4行程时，使开关减速限位1KM接通，短接了RKM的大部分电阻，使通过RKM的分流增大，从而使电机转速降低，实现了开门的减速的功能。当开门结束时，切断开门中断限位，使开门继电器释放，电梯停止开门。\n关门：当JGM吸合时，电流一方面通过DM，另一方面通过关门电阻RGM，从M3→M2，使门机向关门方向旋转。因为此时RGM电阻值较大，通过RGM的分流较小，所以关门速度较快。当电梯关闭到一半行程时，使关门一级减速限位1GM接通，短接了RGM的一部分电阻，使从RGM的分流增大一些，门机实现一级减速。电梯门继续关闭到3/4行程时，接通二级减速限位2GM，短接RGM的大部分电阻，使从RGM的分流进一步增加，而电梯门机转速进一步降低，实现了关门的二级减速。当关门结束时，切断关门终端限位，使关门继电器释放，电梯停止关门。通过调节开关门电路中的总分压电阻RMD，可以控制开关门的总速度。\n因为当JY吸合时，门机励磁绕阻DMO一直有电，所以当JKM或JGM释放时，能使电机立即进入能耗制动，门机立即停转。而且在电梯门关闭时，能提供一个制动力，保证在轿厢内不能轻易扒开电梯门。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="直流门机系统中常见的故障：\n现象1：电梯开门无减速。有撞击声。\n原因：门开启时打不到开门减速限位。开门减速限位已坏，不能接通。开门减速电阻已烧断或中间的抱箍与电阻丝接触不良。\n现象2：电梯关门无减速，关门速度快有撞击声。\n原因：门关闭时打不到关门减速限位。关门减速限位已坏，不能接通。关门减速电阻已烧断或中间的抱箍与电阻丝接触不良。\n现象3：开门或关门时速度太慢。\n原因：开门或关门减速限位已坏，处在常接通状态。\n现象4：门不能关只能开（JKM与JGM动作正常）\n原因：可能是关门终端限位已坏，始终处于断开状态。\n现象5：门不能开只能关（JKM与JGM动作正常）\n原因：可能是开门终端限位已坏，始终处于断开状态。\n现象6：门即不能开也不能关（JKM与JGM动作正常）\n原因：可能是开关门总电阻已烧断。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="2.VVVF变频门机系统\n现在生产的电梯大多都采用VVVF变频门机系统，一般的变频门机系统中，控制屏提供给门机系统一个电源，一个开门信号，一个关门信号。\n变频门机系统也有减速开关和终端开关，大多采用双稳态磁开关。门机系统具有自学习功能。当到门机终端开关动作时，再返回控制屏一个终端信号，用来控制开关门继电器。一般变频门机可以进行开关门速度、力矩、减速点位置等的设定，具体要参考产方提供的门机系统说明书或电梯调试资料进行调节。\n有的变频门机在断电扳动轿门后，因为开位置信号丢失。门机将不再受控制屏开关门信号的控制，必须断电后自学习一次方能正常工作。\n有的变频门机系统除了受控制屏开关门信号控制外，自身有力限计算功能，当在关门过程中力限超过设定值时，即向反方向开启。当到达关门终端开关动作后，这个力限计算才失效。对于这种门系统，关门终端的位置一定要超在轿门锁之前，否则，门锁接通后电梯即可运行，如果这个力限计算还有效的话，可能会引起电梯在运行中有开门现象，应该注意。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="井道上下终端限位"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="作用:终端限位一般在电梯运行到最高层，且高出平层5-8CM处动作。动作后电梯快车和慢车均不能再向上运行。反之，下终端限位一般在电梯运行到最底层，且低于平层5-8CM处动作。动作后电梯快车和慢车均不能再向下运行。\n故障现象1：电梯快车和慢车均不能向上运行，但可以向下运行。\n原因：可能是上终端限位坏，处于断开状态。\n故障现象2：电梯快车和慢车均不能向下运行，但可以向上运行。\n原因：可能是下终端限位坏，处于断开状态。井道上下强迫减速限位1米/秒以下速度的电梯，一般装有一只向上强迫减速限位和一只向下强迫减速限位。安装位置应该等于（或稍小于）电梯的减速距离。1.5米/秒以上速度的电梯，一般装有两只向上强迫减速限位和两只向下强迫减速限位。因为快速电梯一般分为单层运行速度和多层运行速度两种，在不同的速度运行下减速距离也不一样，所以要分多层运行减速限位及单层运行减速限位。\n作用1：在电梯运行到端站时强迫电梯进入减速运行。\n作用2：目前许多电梯都用强迫减速限位作为电梯楼层位置的强迫校正点。\n故障现象1：电梯快车不能向上运行，但慢车可以。\n原因：可能是向上强迫减速限位已坏，处于断开状态。\n故障现象2:电梯快车不能向下运行，但慢车可以。\n原因:可能是向上强迫减速限位已坏，处于断开状态。\n故障现象3:电梯处于故障状态，程序起保护。可能用故障代码显示为换速开关故障。\n原因:可能是向上或向下强迫减速限位已坏。因为强迫减速限位在电梯安全中显得相当重要，许多电梯程序都被设计成对该限位有检测功能，如果检测到该限位坏，即起程序保护。电梯处于“死机”状态。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="选层器"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="作用:计算电梯在运行中目前所处的实际位置。\n选层器的类型： \n1、机械选层器早先的电梯是采用机械式选层器，有的是采用同步钢带，有的是采用走灯机，随动电梯的运行，模拟反映出电梯实际所在的位置。\n2、井道楼层感应器有的电梯，电梯位置的计算是靠在井道中每层都装一只磁感应器，轿厢侧装一块隔磁板，当隔磁板插入感应器时，该感应器动作，控制屏接受到这个感应器的信号后，立即计算出电梯的实际位置。同时控制显示器显示出电梯所在位置的楼层数字。\n故障现象：电梯要确定运行的方向，势必要知道电梯目前所在的位置，所以电梯位置的确定非常重要，这部分电路出了故障，可能电梯就不能自动确定运行方向了，而会出现信号登记不上的现象。同样，这部分电路出现故障时，一般也会引起楼层显示数字的不正确等现象。（请详细看一下继电器电梯的楼层控制部分与自动定向部分）"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="3.轿厢换速感应器\n目前有些电梯省掉了楼层感应器，而采用装在轿厢上的换速感应器来计算楼层（如房屋厂的）。这种电梯在轿厢侧装有一只上换速感应器和一只下换速感应器，在井道中每层停站的向上换速点和向下换速点分别装有一块短的隔磁板。\n当电梯上行时，到达换速点时，隔磁板插入感应器，感应器动作，控制屏接收到一个信号，使原来的楼层数自动加1。当电梯下行时，到达换速点时，隔磁板插入感应器，感应器动作，控制屏接收到一个信号，使原来的楼层数自动减1。\n当电梯到达最底层时，下强迫减速限位动作时，能使电梯楼层数字强制转换为最低层数字。\n当电梯到达最高层时，上强迫减速限位动作时，能使电梯楼层数字强制转换为最高层数字。\n故障现象：这种类型的电梯往往会造成电梯在运行中有乱层现象。如：上换速感应器坏（不能动作）时、电梯向上运行时数字不会翻转，也不能在指定的楼层停靠，而是一直向上快速运行到最高层，楼层数字一下子翻到了最高层。使电梯在最高层减速停靠。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="4.数字选层器所谓数字选层器，实际上就是利用旋转编码器得到的脉冲数来计算楼层的装置。这在目前大多数变频电梯中较为常见。\n原理:装在电动机尾端（或限速器轴）上的旋转编码器，跟着电动力同步旋转，电动机每转一转，旋转编码器能发出一定数量的脉冲数（一般为600或1024个）。在电梯安装完成后，一般要进行一次楼层高度的写入工作，这个步聚就是预先把每个楼层的高度脉冲数和减速距离脉冲数存入电脑内，在以后运行中，旋转编码器的运行脉冲数再与存入的数据进行对比，从而计算出电梯所在的位置。一般地，旋转编码器也能得到一个速度信号，这个信号要反馈给变频器，从而调节变频器的输出数据。\n故障现象:\n1.旋转编码器坏（无输出）时，变频器不能正常工作，变得运行速度很慢，而且一会儿变频器保护，显示“PG断开”等信息。\n2.旋转编码器部分光栅坏时，运行中会丢失脉冲，电梯运行时有振动，舒适感差。\n维修：旋转编码器的接线要牢靠，走线要离开动力线以防干扰。有时因为旋转编码器被污染，光栅堵塞等情况，可以拆开外壳进行清洁。注意：旋转编码器是精密的机电一体设备，拆除时要小心。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/color_bg_2"
+                android:gravity="center_vertical"
+                android:text="轿厢上下平层感应器"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginBottom="10dp"
+                android:text="作用:\n1.用来进行轿厢的爬行平层 \n2.用来进行反馈门区信号故障现象:平层感应器不动作(或者隔磁板插入感应器的位置偏差太大)时，电梯减速后可能不会平层，而是继续慢速行驶。有些电梯程序能检测平层感应器的动作情况，比如当电梯快速运行时，规定到达一定时间必需要检测到有平层信号，否则认为感应器出错，程序立即反馈电梯故障信号。"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

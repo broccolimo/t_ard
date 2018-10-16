@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yzmc">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:name="com.yzmc.util.MyApplication">
+        <activity android:name="com.yzmc.activity.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yzmc.activity.Main"></activity>
+        <activity android:name="com.yzmc.activity.b"></activity>
+        <activity android:name="com.yzmc.activity.b_map"></activity>
+        <activity android:name="com.yzmc.activity.b_center"></activity>
+        <activity android:name="com.yzmc.activity.b_workContent"></activity>
+        <activity android:name="com.yzmc.activity.Delay_Write"></activity>
+        <activity android:name="com.yzmc.activity.Order_Cancel"></activity>
+        <activity android:name="com.yzmc.activity.Order_Success"></activity>
+        <activity android:name="com.yzmc.activity.Extrainfo"></activity>
+        <activity android:name="com.yzmc.activity.Feedback"></activity>
+        <activity android:name="com.yzmc.activity.Review"></activity>
+        <activity android:name="com.yzmc.activity.Review_Unpass"></activity>
+        <activity android:name="com.yzmc.activity.ReviewDetail"></activity>
+        <activity android:name="com.yzmc.activity.Charge_Back"></activity>
+        <activity android:name="com.yzmc.activity.Knowledge"></activity>
+        <activity android:name="com.yzmc.activity.x"></activity>
+        <activity android:name="com.yzmc.activity.x_center"></activity>
+        <activity android:name="com.yzmc.activity.x_center_end"></activity>
+        <activity android:name="com.yzmc.activity.x_center_next"></activity>
+        <activity android:name="com.yzmc.activity.x_map"></activity>
+        <activity android:name="com.yzmc.activity.e"></activity>
+        <activity android:name="com.yzmc.activity.e_center"></activity>
+        <activity android:name="com.yzmc.activity.e_history"></activity>
+        <activity android:name="com.yzmc.activity.e_history_detail"></activity>
+        <activity android:name="com.yzmc.activity.AddElevator"></activity>
+        <activity android:name="com.yzmc.activity.GIS"></activity>
+        <activity android:name="com.yzmc.activity._Video"></activity>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="hYZoCZuXmtrpb8VCImqH6dhyteGt4x8N"/>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+    </application>
+
+</manifest>

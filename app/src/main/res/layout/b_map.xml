@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_1"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_below="@+id/tv_1"
+        android:layout_above="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/btn_order_start"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="开始"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_style_1"/>
+
+        <Button
+            android:id="@+id/nav"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="导航"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_style_1"/>
+
+
+        <Button
+            android:id="@+id/btn_order_cancel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="退单"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_style_1"/>
+
+    </RelativeLayout>
+</RelativeLayout>
